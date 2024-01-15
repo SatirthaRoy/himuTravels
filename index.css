@@ -1,3 +1,162 @@
+/* variables */
+:root {
+  --Dark: #131318;
+  --Dark-02: #424247;
+  --paragraph: #5A5A5D;
+  --theme: #FF5400;
+}
+
+/* common styles */
+
 * {
   margin: 0px;
+  font-family: Mulish;
+  font-style: normal;
 }
+
+.screen {
+  width: 81%;
+  margin: 0px auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Dark-02);
+  font-size: 18px;
+  font-weight: 400;
+  transition: all .2s ease;
+}
+
+a:hover {
+  width: 700;
+  color: var(--theme);
+}
+
+p {
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.primary-btn {
+  border: none;
+  border-radius: 8px;
+  background-color: var(--theme);
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+  padding: 16px 36px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+input, select {
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  flex-grow: 1;
+  color: rgba(19, 19, 24, 0.50);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+/* header styles */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo h1 span {
+  color: var(--theme);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0px;
+}
+
+.hamburg {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  gap: 44px;
+}
+
+/* banner section */
+.banner {
+  border-radius: 16px;
+  background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('./Images/Group 13 (1) (1).png');
+  background-size: cover, cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 116px 0px;
+}
+
+.banner h1 {
+  color: #FFF;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.banner p {
+  width: 60%;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.banner-form {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.30);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  width: 70%;
+}
+
+
+/* responsive styles */
+
+@media screen and (max-width: 600px) {
+
+  .banner {
+    /* background-position: center; */
+  }
+
+  .screen, .banner p {
+    width: 90%;
+  }
+
+  .banner h1 {
+    /* font-size: 22px; */
+    text-align: center;
+  }
+
+  .banner-form {
+    flex-direction: column;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hamburg {
+    display: block;
+  }
+  
+}
+
