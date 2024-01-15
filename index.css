@@ -201,11 +201,11 @@ ul > li {
   gap: 24px;
 }
 
-.pic {
+.pic, .lost {
   position: relative;
 }
 
-.pic h2 {
+.pic h2, .lost h3 {
   text-align: center;
   position: absolute;
   top: 50%;
@@ -214,6 +214,13 @@ ul > li {
   color: #FFF;
   font-size: 28px;
   font-weight: 800;
+}
+
+.lost h3 {
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 /* choose section styles */
@@ -246,6 +253,77 @@ ul > li {
 .benefits div[class = "blue"] {
   background-color: #29CEF633;
 }
+
+/* deals section styles */
+.deals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.one {
+  background-image: url('./Images/Group 39.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 56px;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 16px;
+}
+
+.two {
+  background-image: url('./Images/Group 40.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 56px;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 16px;
+}
+
+.deal {
+  padding: 50px;
+  width: 50%;
+  border-radius: 16px;
+  border: 2px solid #FFF;
+  background: rgba(255, 255, 255, 0.80);
+  backdrop-filter: blur(2.5px);
+}
+
+.small-icn {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+small {
+  display: flex;
+  align-items: center;
+  color: #5A5A5D;
+  font-size: 16px;
+  font-weight: 400;
+  gap: 8px;
+}
+
+.deal h2 {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.deal h3 {
+  color: #FF5400;
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
 
 /* gallery section */
 .photo {
@@ -390,8 +468,12 @@ footer section p {
 
   /* header */
 
-  .screen, .banner p{
+  .screen, .banner p, .deal{
     width: 90%;
+  }
+
+  .deal {
+    padding: 10px;
   }
 
   .banner h1 {
@@ -443,6 +525,13 @@ footer section p {
     margin: 24px 0px;
   }
 
+  .one,.two {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 156px 16px 16px 16px;
+  }
+
  /* custom secton */
   .photo p {
     width: 90%;
@@ -454,6 +543,7 @@ footer section p {
 
   .letter {
     flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
   }
 
