@@ -183,7 +183,7 @@ ul > li {
 
 /* destination section styles */
 
-.destination p {
+.destination p, .choose > p {
   width: 56%;
   text-align: center;
   margin-top: 24px;
@@ -214,6 +214,29 @@ ul > li {
   color: #FFF;
   font-size: 28px;
   font-weight: 800;
+}
+
+/* choose section styles */
+.choose {
+  margin: 100px 0px;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.benefits > div {
+  background-color: #FBB56333;
+  width: 40%;
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.benefits div[class = "blue"] {
+  background-color: #29CEF633;
 }
 
 /* responsive styles */
@@ -259,7 +282,7 @@ ul > li {
 
   /* destination */
 
-  .destination p {
+  .destination p, .choose > p, .benefits > div  {
     width: 100%;
   }
 
@@ -269,6 +292,10 @@ ul > li {
 
   .pic img {
     width: 100%;
+  }
+
+  .choose {
+    margin: 24px 0px;
   }
 
 }
