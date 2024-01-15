@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+  <!-- bootstrapp icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 <body>
   <!-- header -->
@@ -36,7 +38,7 @@
     <section class="banner flex-col-center">
       <h1>Explore Your Travel</h1>
       <p>Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
-      <form action="" class="banner-form">
+      <div action="" class="banner-form">
         <input type="text" placeholder="Where go">
         <select name="When" id="1">
           <option value="" selected>When</option>
@@ -49,7 +51,7 @@
           <option value="5-10">bus</option>
         </select>
         <button class="primary-btn"><img src="./essentials/search.svg" alt="search"> Find Now</button>
-      </form>
+      </div>
     
     </section>
   </header>
@@ -148,12 +150,64 @@
 
     </section>
 
+    <!-- photo gallery section -->
+    <section class="photo">
+      <h1>Photo Gallery</h1>
+      <p>Amet consectetur. Vulputate commodo felis molestie risus
+        ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. Id bibendum nunc senectus semper tincidunt.</p>
+
+      <div class="photos">
+        <img src="./Images/6.webp" alt="">
+        <img src="./Images/2.jpg" alt="">
+        <img src="./Images/3.jpeg" alt="">
+        <img src="./Images/4.jpg" alt="">
+        <img src="./Images/5.jpg" alt="">
+        <img src="./Images/6.jpg" alt="">
+      </div>
+    </section>
+
+    <!-- news letter section -->
+
+    <section class="letter">
+      <div class="form">
+        <h2>Newsletter</h2>
+        <p>Get your daily dose of travel news & tips. Sign up today!</p>
+        <hr>
+        <form action="">
+          <label for="name"><input type="text" placeholder="Enter your name"></label>
+          <label for="email"><input type="email" placeholder="Enter your email"></label>
+          <button class="primary-btn">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="discount-image">
+        <div class="discount">
+          <h5>Travel.com</h5>
+          <h3>Save up to 70%</h3>
+        </div>
+        <img src="./Images/Rectangle 8 (1).png" alt="">
+      </div>
+    </section>
 
   </main>
 
   <!-- footer -->
   <footer>
-
+    <section>
+      <div class="logo footer-logo">
+        <img src="./Images/Group 40071 (2).png" alt="">
+        <h1>Himu <span>Travel</span></h1>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur. Nulla sit viverra morbi vitae blandit orci potenti vulputate. Leo erat maecenas vitae elementum ultricies nullam. </p>
+      <div class="social-icons">
+        <i class="bi bi-twitter" style="color: black;"></i>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-github"></i>
+      </div>
+      <hr>
+      <small>2017, All Rights Reserved.</small>
+    </section>
 
   </footer>
   
