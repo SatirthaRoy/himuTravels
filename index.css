@@ -479,3 +479,25 @@ footer section p {
 
 }
 
+/* medium devices */
+
+@media screen and (min-width:600px) and (max-width: 992px) {
+  .screen, .banner p{
+    width: 90%;
+  }
+
+  .banner-form {
+    flex-wrap: wrap;
+  }
+
+  .photos {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .letter {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
