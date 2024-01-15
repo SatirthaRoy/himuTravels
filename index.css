@@ -32,9 +32,8 @@ a:hover {
   color: var(--theme);
 }
 
-p {
+p, ul > li {
   color: #FFF;
-  text-align: center;
   font-size: 16px;
   font-weight: 400;
 }
@@ -70,6 +69,12 @@ input, select {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+.logo h1 {
+  color: #131318;
+  font-size: 36px;
+  font-weight: 800;
 }
 
 .logo h1 span {
@@ -116,6 +121,7 @@ nav {
   width: 60%;
   margin-top: 24px;
   margin-bottom: 48px;
+  text-align: center;
 }
 
 .banner-form {
@@ -128,14 +134,50 @@ nav {
   width: 70%;
 }
 
+/* popular section styles */
+
+.popular {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  margin: 100px 0px;
+}
+
+.popular div {
+  width: 50%;
+}
+
+.popular img {
+  width: 100%;
+}
+
+.popular h1 {
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.popular p, ul > li {
+  color: rgba(19, 19, 24, 0.70);
+  margin: 24px 0px;
+}
+
+ul > li {
+  margin: 16px 0px;
+}
+
+
+.popular button {
+  font-weight: 800;
+}
+
 
 /* responsive styles */
 
 @media screen and (max-width: 600px) {
 
-  .banner {
-    /* background-position: center; */
-  }
+  /* header */
 
   .screen, .banner p {
     width: 90%;
@@ -157,6 +199,20 @@ nav {
   .hamburg {
     display: block;
   }
+
+  /* main */
+
+  /* popular */
+
+  .popular {
+    flex-direction: column;
+    margin: 24px 0px;
+    gap: 24px;
+  }
   
+  .popular div {
+    width: 100%;
+  }
+
 }
 
