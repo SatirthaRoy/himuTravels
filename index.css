@@ -14,6 +14,12 @@
   font-style: normal;
 }
 
+h1 {
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+}
+
 .screen {
   width: 81%;
   margin: 0px auto;
@@ -33,7 +39,7 @@ a:hover {
 }
 
 p, ul > li {
-  color: #FFF;
+  color: #131318B2;
   font-size: 16px;
   font-weight: 400;
 }
@@ -62,6 +68,11 @@ input, select {
   font-weight: 400;
 }
 
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /* header styles */
 
@@ -104,9 +115,6 @@ nav {
   background-size: cover, cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 116px 0px;
 }
 
@@ -118,6 +126,7 @@ nav {
 }
 
 .banner p {
+  color: #FFF;
   width: 60%;
   margin-top: 24px;
   margin-bottom: 48px;
@@ -167,11 +176,45 @@ ul > li {
   margin: 16px 0px;
 }
 
-
 .popular button {
   font-weight: 800;
 }
 
+
+/* destination section styles */
+
+.destination p {
+  width: 56%;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.destination h1 {
+  text-align: center;
+}
+
+.pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.pic {
+  position: relative;
+}
+
+.pic h2 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  color: #FFF;
+  font-size: 28px;
+  font-weight: 800;
+}
 
 /* responsive styles */
 
@@ -211,6 +254,20 @@ ul > li {
   }
   
   .popular div {
+    width: 100%;
+  }
+
+  /* destination */
+
+  .destination p {
+    width: 100%;
+  }
+
+  .pic {
+    width: 100%;
+  }
+
+  .pic img {
     width: 100%;
   }
 
